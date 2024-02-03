@@ -1,0 +1,173 @@
+.create-tournament-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background: url('/photo/backgrounds/tournament-heading.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.header-img-es {
+    width: 9.4rem;
+    height: 11.2rem;
+    border-bottom-left-radius: 6.25rem;
+    border-bottom-right-radius: 6.25rem;
+    position: absolute;
+    top: 0.18rem;
+    right: 44.5%;
+    box-shadow: 0 0 0.5rem #a1f800;
+    z-index: 3;
+}
+
+.create-tournament-entrance {
+    display: grid;
+    place-items: center;
+    height: 30vh;
+    padding: 7rem;
+    padding-bottom: 8.5rem;
+    background: url('/photo/backgrounds/create-tournament-bg.avif');
+    box-shadow: 0 0 0.5rem #fffec6;
+    border-radius: 0.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.create-tournament-entrance h3 {
+    color: #000;
+    text-shadow: 0 0 0.2rem #fffec6;
+}
+
+.create-tournament-field {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    position: relative;
+}
+
+.create-tournament-field div {
+    width: 10rem;
+    height: 6rem;
+    cursor: pointer;
+}
+
+.create-tournament-5v5-btn {
+    width: 10rem;
+    height: 6rem;
+    border: 2px solid #0a91ff;
+    border-radius: 0.6rem;
+    background: linear-gradient(to right, #0a91ff, #a5d6fd, #e7f4ff, #a5d6fd, #0a91ff);
+    cursor: pointer;
+    transition: ease-in-out 0.7s;
+}
+
+.create-tournament-1v1-btn {
+    width: 10rem;
+    height: 6rem;
+    border: 2px solid #ff315d;
+    border-radius: 0.6rem;
+    background: linear-gradient(to right, #ff315d, #ffa6b9, #ffd6df, #ffa6b9, #ff315d);
+    cursor: pointer;
+    transition: ease-in-out 0.7s;
+}
+
+.create-5v5-img {
+    width: 5.5rem;
+    height: 5rem;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 2.25rem;
+    cursor: pointer;
+    transition: ease-in-out 0.7s;
+    opacity: 80%;
+}
+
+.create-5v5-img-hvr {
+    width: 7rem;
+    height: 6.5rem;
+    right: 1.45rem;
+    bottom: 0.9rem;
+    transform: rotateX(360deg);
+    opacity: 100%;
+}
+
+.create-1v1-img {
+    width: 5.5rem;
+    height: 5rem;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 2.25rem;
+    cursor: pointer;
+    transition: ease-in-out 0.7s;
+    opacity: 80%;
+}
+
+.create-1v1-img-hvr {
+    width: 7rem;
+    height: 6.5rem;
+    left: 1.45rem;
+    bottom: 1rem;
+    transform: rotateX(360deg);
+    opacity: 100%;
+}
+
+.create-5v5-anim {
+    animation: create-5v5-anim 0.7s linear forwards;
+    box-shadow: 0 3rem 2.5rem #000;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+.create-1v1-anim {
+    animation: create-1v1-anim 0.7s linear forwards;
+    box-shadow: 0 3rem 2.5rem #000;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+/* animations */
+@keyframes create-5v5-anim {
+    0% {
+        transform: rotateX(0);
+    }
+
+    25% {
+        background: linear-gradient(to right, #0172ce, #92ccfc, #7998b3, #92ccfc, #0172ce);
+    }
+
+    50% {
+        background: linear-gradient(to right, #0062b3, #7ec4fd, #506679, #7ec4fd, #0062b3);
+    }
+
+    75% {
+        background: linear-gradient(to right, #005da8, #5cb3fa, #2e3841, #5cb3fa, #005da8);
+    }
+
+    100% {
+        transform: rotateX(55deg);
+        background: linear-gradient(to right, #003d6e, #3ba5fc, #0b0b0c, #3ba5fc, #003d6e);
+    }
+}
+
+@keyframes create-1v1-anim {
+    0% {
+        transform: rotateX(0);
+    }
+
+    25% {
+        background: linear-gradient(to right, #ec2752, #ffa0b5, #fc9fb3, #ffa0b5, #ec2752);
+    }
+
+    50% {
+        background: linear-gradient(to right, #f0214d, #fa93a9, #ad5568, #fa93a9, #f0214d);
+    }
+
+    75% {
+        background: linear-gradient(to right, #bd0d33, #f7718e, #803f4d, #f7718e, #bd0d33);
+    }
+
+    100% {
+        transform: rotateX(55deg);
+        background: linear-gradient(to right, #c0002a, #f14c70, #130b0d, #f14c70, #c0002a);
+    }
+}

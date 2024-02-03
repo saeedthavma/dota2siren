@@ -1,0 +1,50 @@
+
+
+.header-img-wr {
+    width: 150px;
+    height: 180px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    position: absolute;
+    top: 3px;
+    right: 44.5%;
+    box-shadow: 0 0 7px #00ff0d;
+    z-index: 3;
+}
+
+.userpanel-content-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background: url('/photo/backgrounds/tournament-heading.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* panel */
+.userpanel-panel {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    margin-top: 8rem;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.userpanel-panel li {
+    width: 70%;
+    padding: 0.5rem;
+    border: 1px solid #fff;
+    border-bottom: none !important;
+    border-top-right-radius: 0.4rem;
+    border-top-left-radius: 0.4rem;
+    text-align: center;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+.userpanel-panel li:hover {
+    box-shadow: 0 -0.1rem 0.3rem #fff;
+}

@@ -1,0 +1,249 @@
+.create-tournament-1v1-area {
+    margin-top: 7.5rem;
+    margin-bottom: 5rem;
+}
+.create-tournament-1v1-area h2 {
+    color: #fff;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.create-1v1-area {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.create-1v1-tools {
+    height: 70vh;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+.create-1v1-tools div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    color: #fff;
+}
+.create-1v1-tools div select {
+    width: 6.5rem;
+    font-size: 1rem;
+    border: 1px solid #2885ff;
+    border-radius: 0.3rem;
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.create-1v1-plan {
+    height: 70vh;
+    background: #7bd460;
+    border: 2px solid #2885ff;
+    border-radius: 0.5rem;
+}
+.create-1v1-plan img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+
+/* group stage */
+.create-group-stage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    direction: ltr;
+    place-items: start;
+    margin: 2rem 0;
+}
+.create-group-stage ul {
+    color: #fff;
+    list-style: none;
+    padding: 0;
+    direction: ltr;
+}
+.create-group-stage ul li {
+    padding: 0.5rem 5.5rem;
+    border: 1px solid #ffffff9c;
+    text-align: center;
+    background: linear-gradient(to right, #0f0f0f, #000, #000, #000, #0f0f0f);
+}
+.gp-li-heading {
+    background: linear-gradient(to right, #2885ff, #8fc0ff, #daeaff, #8fc0ff, #2885ff) !important;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    color: #000 !important;
+    font-weight: bold;
+}
+
+
+.create-rank-limit {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    padding: 4rem 0;
+    margin-top: 0.5rem;
+    border-bottom: 1px dashed #ffffff69;
+    border-top: 1px dashed #ffffff69;
+}
+.create-rank-limit label {
+    margin-right: 130%;
+    margin-bottom: 2rem;
+    width: 50%;
+    color: #fff;
+}
+.create-rank-limit div {
+    display: grid;
+    grid-template-columns: max-content 80%;
+    grid-column-gap: 1rem;
+    position: relative;
+}
+.create-rank-limit div span {
+    color: #fff;
+    align-self: center;
+}
+.create-rank-limit div div {
+    display: grid;
+    grid-template-columns: 80% max-content;
+    align-items: center;
+    width: 12rem;
+    font-weight: bold;
+    padding: 0.3rem;
+    border: 1px solid #2885ff;
+    border-radius: 0.5rem;
+    background: #fff;
+    cursor: pointer;
+}
+.create-rank-limit div ul {
+    padding: 0;
+    background: #000;
+    list-style: none;
+    border: 1px solid #777777;
+    border-radius: 0.3rem;
+    position: absolute;
+    width: 12.5rem;
+    right: 12%;
+    top: 2.1rem;
+}
+.create-rank-limit div ul li {
+    border-bottom: 1px solid #383838;
+    display: grid;
+    grid-template-columns: max-content 60%;
+    place-items: center;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+.create-rank-limit div ul li:hover {
+    background: #111111;
+}
+.create-rank-limit div ul img {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* options */
+.create-1v1-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 2.5rem;
+    place-items: center;
+    margin-top: 3rem;
+}
+.create-1v1-options div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+    color: #fff !important;
+    width: 100%;
+}
+.create-1v1-options div input {
+    padding: 0.5rem;
+    width: 60%;
+    height: 1rem;
+    outline: none;
+    border: 1px solid #2885ff;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+}
+.create-1v1-options div p {
+    font-size: 0.7rem;
+    color: #ffffffc0 !important;
+    padding: 0 0.7rem;
+    width: 80%;
+}
+.create-1v1-options div p span {
+    padding: 0 0.5rem;
+}
+.create-1v1-options div select {
+    width: 6.5rem;
+    font-size: 1rem;
+    border: 1px solid #2885ff;
+    border-radius: 0.3rem;
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+    margin-top: 0.6rem;
+}
+
+.create-1v1-start-date {
+    display: block !important;
+    width: 48% !important;
+    place-self: center;
+}
+.create-1v1-start-date input {
+    font-weight: bold !important;
+    margin-top: 0.6rem;
+    margin-right: 3rem !important;
+}
+
+.create-tournament-name {
+    margin-right: 100%;
+    border-top: 1px dashed #ffffff69;
+}
+
+.create-1v1-submit-btn {
+    width: 50%;
+    height: 2.6rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 2rem 100% 2rem 0;
+    border: 2px solid #5b6bff;
+    border-radius: 0.7rem;
+    background: radial-gradient(#f6ffff, #defffc, #b4eee9, #6fc5be, #00413c);
+    cursor: pointer;
+    transition: ease-in-out 0.4s;
+}
+.create-1v1-submit-btn:hover {
+    border-color: #004100;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    background: #17c700;
+    box-shadow: 0 0 10px #1eff00;
+    font-size: 1.3rem;
+}
+
+.create_bracket_info {
+    color: #ffffffc0;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-column-gap: 2rem;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.rank-dropdown-anim {
+    animation: rank-dropdown-anim 0.3s linear;
+}
+
+/* animations */
+@keyframes rank-dropdown-anim {
+    0% {
+        height: 0;
+        opacity: 0;
+    }
+    100% {
+        height: 25rem;
+        opacity: 100%;
+    }
+}
+

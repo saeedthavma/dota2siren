@@ -1,0 +1,62 @@
+
+.login-area {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    place-items: center;
+    height: 100%;
+}
+.login-area div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #fff;
+    width: 90%;
+}
+.login-area h2 {
+    color: #fff;
+}
+.login-area input {
+    width: 100%;
+    border: 2px solid #ffffffa9;
+    border-radius: 2rem;
+    background: #000000b9;
+    color: #fff;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+}
+
+.login-btn {
+    width: 100%;
+    border: none;
+    border-radius: 2rem;
+    background: linear-gradient(to right, #fa824a, #ffcca1, #fff563);
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #0000007e;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.login-btn:hover {
+    box-shadow: 0 0 0.2rem #ffa459;
+}
+
+.login-area div span {
+    font-size: 0.9rem;
+    color: #ffffff96;
+    cursor: pointer;
+}
+.login-area div span:hover {
+    color: #fff;
+}
+.login-signup {
+    justify-self: start;
+}
+.login-change-way {
+    justify-self: end;
+}
+
+.black-color {
+    color: #000 !important;
+}

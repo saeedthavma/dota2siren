@@ -1,0 +1,24 @@
+
+.playerlist-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background: url('/photo/backgrounds/tournament-heading.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.header-img-ta {
+    width: 9.4rem;
+    height: 11.2rem;
+    border-bottom-left-radius: 6.25rem;
+    border-bottom-right-radius: 6.25rem;
+    position: absolute;
+    top: 0.18rem;
+    right: 44.5%;
+    box-shadow: 0 0 0.5rem #ff0947;
+    z-index: 3;
+}

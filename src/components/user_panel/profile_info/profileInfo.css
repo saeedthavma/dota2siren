@@ -1,0 +1,62 @@
+.profile-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 3rem;
+    place-items: center;
+    margin-top: 2rem;
+}
+
+.profile-main-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+}
+.profile-main-info h2 {
+    color: #ffffffdc;
+    text-shadow: 0 0 0.2rem #000;
+    place-self: center;
+}
+.profile-main-info img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 0.2rem;
+}
+.profile-rank {
+    position: relative;
+}
+.profile-rank img {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+}
+
+.profile-username {
+    color: #ffffffdc;
+    text-shadow: 0 0 0.2rem #000;
+}
+
+.profile-role {
+    color: #fff;
+}
+.profile-role div {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-column-gap: 0.5rem;
+    place-items: center;
+    margin: 0.5rem 0;
+}
+.profile-role div span {
+    font-family: dota2font !important;
+    letter-spacing: 0.09rem;
+}
+.profile-role div img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.profile-signature-hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: #fff;
+    align-self: start;
+}
