@@ -259,28 +259,25 @@
     right: 35%;
     width: 30%;
     height: 15rem;
-    background: #000;
+    background: url('/photo/backgrounds/logout-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 2px solid #3a3a3a;
     border-radius: 1rem;
     box-shadow: 0 0 0.3rem #a7ff1a;
     z-index: 110;
 }
-.logout-popup img {
-    width: 100%;
-    border-top-right-radius: 0.9rem;
-    border-top-left-radius: 0.9rem;
-    box-shadow: 0 0.5rem 2rem #7dbe13;
-}
+
 .logout-popup {
     display: grid;
-    grid-template-rows: 3, 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
 }
 .logout-popup span {
-    justify-self: center;
     color: #fff;
+    text-shadow: 0 0 0.2rem #000;
 }
 .logout-popup div {
-    justify-self: center;
     display: grid;
     align-self: start;
     grid-template-columns: repeat(2, 1fr);

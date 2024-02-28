@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../header/Header.jsx';
 import Footer from '../footer/Footer.jsx';
 import ProfileInfo from './profile_info/ProfileInfo.jsx';
+import HostTournament from './host_tournament/HostTournament.jsx';
 import './userPanel.css';
 
 const UserPanel = () => {
@@ -12,7 +13,7 @@ const UserPanel = () => {
             <Header />
             <img className='header-img-wr' src='/photo/images/header-img-wr.jpg' />
 
-            <div className="userpanel-area container">
+            <div className="userpanel-area">
 
                 <div className='userpanel-content-bg'></div>
 
@@ -23,7 +24,7 @@ const UserPanel = () => {
                 </ul>
 
                 <div className="userpanel-content">
-                    <ProfileInfo />
+                    <HostTournament />
                 </div>
 
             </div>

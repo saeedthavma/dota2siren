@@ -48,19 +48,23 @@ const ProfileInfo = () => {
             </div>
 
             <div className="profile-signature-hero">
-                <h4>هیرو های تخصصی :</h4>
-                <div>
-                    <span>Hero</span>
-                    <span></span>
+                <h4 className='profile-signature-title'>هیرو های تخصصی :</h4>
+                <div className='profile-signature-hero1'>
+                    <span>Hero Name</span>
+                    <img src='/photo/images/header-img-ta.jpg' />
                 </div>
-                <div>
-                    <span>Hero</span>
-                    <span></span>
+                <div className='profile-signature-hero2'>
+                    <span>Hero Name</span>
+                    <img src='/photo/images/header-img-pa.jpg' />
                 </div>
-                <div>
-                    <span>Hero</span>
-                    <span></span>
+                <div className='profile-signature-hero3'>
+                    <span>Hero Name</span>
+                    <img src='/photo/images/header-img-es.jpg' />
                 </div>
+            </div>
+
+            <div className="profile-team">
+                team
             </div>
 
         </div>

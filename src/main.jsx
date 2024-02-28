@@ -11,6 +11,7 @@ import CreateTournamet from './components/create_tournament/CreateTournamet.jsx'
 import UserPanel from './components/user_panel/UserPanel.jsx';
 import SignArea from './components/sign_area/SignArea.jsx';
 import PlayerList from './components/player_list/PlayerList.jsx';
+import Hosting from './components/hosting/Hosting.jsx';
 
 
 const router = createBrowserRouter ([
@@ -43,8 +44,12 @@ const router = createBrowserRouter ([
     element: <SignArea />
   },
   {
-    path: "playerlist",
+    path: "/playerlist",
     element: <PlayerList />
+  },
+  {
+    path: "/Hosting",
+    element: <Hosting />
   }
 ]);
 

@@ -8,7 +8,6 @@ const Signteam = () => {
 
     const [prvimg, setPrvimg] = useState(["/photo/images/img-unset.png"]);
 
-
     return (
         <div>
 

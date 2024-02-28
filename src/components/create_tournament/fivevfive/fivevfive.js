@@ -1,4 +1,3 @@
-import axios from "axios";
 import server_request from "../../../container/server_request.js";
 
 export const post_tournament = async (name, tournament_type, teams_count, games_type, group_stage, prize_pool,
@@ -66,8 +65,14 @@ export const imgDragAnim = (power) => {
 }
 
 
-export const upload_image = async (file) => {
-    const form_data = new FormData()
-    form_data.append(file, "tournament_logo")
-    axios.post("sfgdf", form_data)
+export const upload_image = async () => {
+    let file = document.getElementById('create_logo_input').files[0];
+
+    const image_name = new FormData()
+    image_name.append("image",file)
+    const post_img = await server_request.post_request({
+        path: "upload/",
+        payload:  image_name
+    })
+    return post_img.data.image_name
 }

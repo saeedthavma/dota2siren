@@ -1,0 +1,141 @@
+
+.elimination16 h2 {
+    margin-top: 8.5rem;
+    text-align: center;
+    color: #fff;
+}
+.elimination16-area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    width: 80%;
+    height: 60rem;
+    margin: 2rem 10%;
+    direction: ltr;
+    color: #fff;
+    border: 2px solid #ffffff3b;
+    border-radius: 1rem;
+}
+
+.elimination16-round-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-row-gap: 2rem;
+    position: relative;
+}
+.elimination16-round-1 h3 {
+    position: absolute;
+    top: -2rem;
+    justify-self: center;
+    align-self: start;
+    color: #bbbbbb;
+}
+.elimination16-round-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    place-items: center;
+    grid-row-gap: 9rem;
+    position: relative;
+}
+.elimination16-round-2 h3 {
+    position: absolute;
+    top: -4rem;
+    justify-self: center;
+    align-self: start;
+    color: #bbbbbb;
+}
+.elimination16-round-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 23rem;
+    position: relative;
+}
+.elimination16-round-3 h3 {
+    position: absolute;
+    top: -4rem;
+    justify-self: center;
+    align-self: start;
+    color: #bbbbbb;
+}
+
+.elimination16-round-4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+}
+.elimination16-trophy-icon {
+    position: absolute;
+    top: -5rem;
+    place-self: center;
+    width: 3rem;
+    height: 3rem;
+}
+.elimination16-round-4 h3 {
+    position: absolute;
+    top: -7.5rem;
+    justify-self: center;
+    align-self: start;
+    color: #bbbbbb;
+}
+
+
+.elimination16-match {
+    width: 15rem;
+    height: 5rem;
+    background: #ffffff31;
+    border: 1px solid #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+.elimination16-match-team1 {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    place-items: center;
+    direction: ltr;
+    border-bottom: 1px solid #fff;
+}
+.elimination16-match-team2 {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    place-items: center;
+    direction: ltr;
+    overflow-x: auto;
+    overflow: hidden;
+}
+.elimination16-team-name {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column-gap: 0.1rem;
+    align-items: center;
+    direction: ltr;
+}
+.elimination16-team-name div {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.elimination16-team-name img {
+    width: auto;
+    max-width: 3rem;
+    height: 1.8rem;
+    padding: 0.1rem;
+    
+}
+.elimination16-team-name span {
+    font-size: 0.9rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    direction: ltr;
+    text-shadow: 0 0 0.2rem #000;
+}
+.elimination16-team-score {
+    padding: 0.55rem 0.9rem;
+    border-left: 1px solid #fff;
+    text-shadow: 0 0 0.2rem #000;
+}

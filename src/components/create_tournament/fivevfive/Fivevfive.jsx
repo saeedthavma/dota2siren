@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import { FaCircleInfo } from "react-icons/fa6";
 import { IoIosArrowDown } from "react-icons/io";
 import { DatePicker } from "zaman";
-import { template_array, from_ranks, to_ranks, previewImage, imgDragAnim, upload_image } from './fivevfive.js';
+import {
+    template_array, from_ranks, to_ranks, previewImage,
+    imgDragAnim, upload_image, post_tournament
+} from './fivevfive.js';
 import { toast } from 'react-toastify';
 import moment from 'moment-jalaali';
 import 'react-toastify/dist/ReactToastify.css';
@@ -20,6 +23,7 @@ const Fivevfive = () => {
     const [deadline, setDeadline] = useState(3);
     const [startDate, setStartDate] = useState(new Date());
     const [prvimg, setPrvimg] = useState(["/photo/images/img-unset.png"]);
+    const [imgName, setImgName] = useState();
 
     const check_group = (e) => {
         if (e.target.value == "group-off") {
@@ -60,8 +64,12 @@ const Fivevfive = () => {
         setDeadline(e.target.value)
     }
 
-    const post_tournament_data = (e) => {
+
+
+
+    const post_tournament_data = async (e) => {
         e.preventDefault();
+        let tournament_logo = await upload_image();
 
         let name = document.getElementById('name_input').value;
         let tournament_type = "5v5";
@@ -92,9 +100,11 @@ const Fivevfive = () => {
             ranks.push(e.value)
             return ranks
         })
+        let from_rank;
+        let to_rank
         if (ranks.includes(fromRank) && ranks.includes(toRank)) {
-            let from_rank = fromRank
-            let to_rank = toRank
+            from_rank = fromRank;
+            to_rank = toRank;
         } else {
             toast("لطفا محدوده رنک تورنمنت را انتخاب کنید", {
                 theme: "dark",
@@ -112,21 +122,28 @@ const Fivevfive = () => {
         } else {
             start_at = startDate.getTime();
         }
+        const data = await post_tournament(name, tournament_type, teams_count, games_type, group_stage, prize_pool,
+            entry, from_rank, to_rank, registration_deadline, start_at, tournament_logo)
 
+        console.log(data);
     }
 
     return (
-        <form className='create-tournament-5v5-area container' onSubmit={(e) => post_tournament_data(e)}>
+        <form className='create-tournament-5v5-area container'
+            onSubmit={(e) => { post_tournament_data(e) }}>
             <h2>طراحی تورنمنت 5 به 5</h2>
             {group ?
                 <div className="create-group-stage">
                     <ul>
-                        <li className="gp-li-heading">GROUP 1</li>
+                        <li className="gp-li-heading">Group A</li>
                         <li>team 1</li>
                         <li>team 2</li>
                         <li>team 3</li>
                         <li>team 4</li>
                         <li>team 5</li>
+                    </ul>
+                    <ul>
+                        <li className="gp-li-heading">Group B</li>
                         <li>team 6</li>
                         <li>team 7</li>
                         <li>team 8</li>
@@ -134,12 +151,15 @@ const Fivevfive = () => {
                         <li>team 10</li>
                     </ul>
                     <ul>
-                        <li className="gp-li-heading">GROUP 2</li>
+                        <li className='gp-li-heading'>Group C</li>
                         <li>team 11</li>
                         <li>team 12</li>
                         <li>team 13</li>
                         <li>team 14</li>
                         <li>team 15</li>
+                    </ul>
+                    <ul>
+                        <li className='gp-li-heading'>Group D</li>
                         <li>team 16</li>
                         <li>team 17</li>
                         <li>team 18</li>
@@ -280,7 +300,7 @@ const Fivevfive = () => {
                     <label>تاریخ شروع تورنمنت :</label>
                     <div className='create-5v5-start-date'>
                         <DatePicker selected={startDate} onChange={(date) => setStartDate(date.value)}
-                        className='date_picker' />
+                            className='date_picker' />
                     </div>
                 </div>
                 <div>
@@ -290,7 +310,7 @@ const Fivevfive = () => {
                 <div className='create-logo-area'>
                     <label>لوگوی تورنمنت :</label>
                     <div className="signteam-logo-field" id='tournament_logo'>
-                        <input type='file'  multiple={false} className='create-file-input' id='create_logo_input'
+                        <input type='file' multiple={false} className='create-file-input' id='create_logo_input'
                             onChange={(e) => { previewImage(e, prvimg, setPrvimg) }}
                             onDragEnter={() => { imgDragAnim("on") }}
                             onMouseLeave={() => { imgDragAnim("off") }}

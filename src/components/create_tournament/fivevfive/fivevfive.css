@@ -51,6 +51,7 @@
 .create-group-stage {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1rem;
     direction: ltr;
     place-items: start;
     margin: 2rem 0;

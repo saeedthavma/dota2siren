@@ -4,8 +4,7 @@
     margin: 0 auto;
 }
 .main-bg {
-    background: linear-gradient(to left, #0f0f0f, #030303, #000,
-    #000, #000, #000, #000, #000, #000, #000, #030303, #0f0f0f);
+    background: #000;
 }
 
 .header-img-dota2 {
@@ -18,10 +17,9 @@
 }
 
 .landpage-top-img {
-    width: 109%;
-    height: 48rem;
-    margin-top: -0.4rem;
-    margin-right: -3.4rem;
+    width: 100%;
+    height: 52rem;
+    margin-top: -1rem;
 }
 
 .landpage-top-heading {
@@ -67,10 +65,12 @@
 
 /* landpage content main */
 .landpage-content-main {
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
     margin-top: -14rem;
+    margin-right: 7%;
 }
 .landpage-content-main img {
     width: 22rem;
@@ -113,12 +113,124 @@
     margin: 20px auto;
 }
 
+/* invoker game area */
+.landpage-invoker-game {
+    width: 86%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    margin-right: 7%;
+}
+.landpage-invoker-game button {
+    width: 10rem;
+    padding: 0.5rem;
+    border: 1px solid #000;
+    border-radius: 0.7rem;
+    background: linear-gradient(to right, #11a0ff, #ff63f2, #ff1414);
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-shadow: 0 0 0.2rem #fff;
+    cursor: pointer;
+    transition: ease-in-out 0.25s;
+}
+.landpage-invoker-game button:hover {
+    box-shadow: 0 0.5rem 0.7rem #c711ff;
+    border-color: #fff;
+    color: #fff;
+    font-weight: lighter;
+    text-shadow: 0 0 0.2rem #000;
+    transform: translateY(-0.1rem);
+}
+.landpage-invoker-leaderboard {
+    list-style: none;
+    padding: 0;
+    direction: ltr;
+}
+.landpage-invoker-leaderboard li {
+    padding: 1rem;
+    margin: 0.2rem 0;
+    background: linear-gradient(to left, #960000, #700041, #004d80);
+    border-bottom: 1px solid #97a100;
+    border-left: 1px solid #97a100;
+    direction: ltr;
+    color: #fff;
+    text-shadow: 0 0 0.2rem #000;
+    border-radius: 0.4rem;
+}
+.landpage-invoker-title {
+    position: relative;
+    place-self: start !important;
+}
+.landpage-invoker-title-bg {
+    position: absolute;
+    width: 20rem !important;
+    height: 6rem !important;
+    right: 0;
+    top: 0;
+}
+.landpage-invoker-title h2 {
+    position: absolute;
+    top: 2.2rem;
+    right: 4rem;
+    color: #000;
+    text-shadow: 0 0.5rem 0.4rem #5a5a5a;
+    font-family: blackOps;
+    width: 12rem !important;
+}
+.landpage-invoker-game h3 {
+    color: #fff;
+    align-self: end !important;
+}
+.landpage-invoker-icon-area {
+    position: relative;
+}
+.landpage-invoker-icon {
+    width: 25rem;
+    height: 25rem;
+}
+.landpage-invoker-quas {
+    position: absolute;
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+    border-radius: 50%;
+    right: 4rem;
+    top: 3rem;
+    box-shadow: 0 0 0.3rem #31acff;
+}
+.landpage-invoker-wex {
+    position: absolute;
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+    border-radius: 50%;
+    right: 15rem;
+    top: 2rem;
+    box-shadow: 0 0 0.3rem #ff35ee;
+}
+.landpage-invoker-exort {
+    position: absolute;
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+    border-radius: 50%;
+    right: 10rem;
+    top: 13rem;
+    box-shadow: 0 0 0.3rem #ffa837;
+}
+
+
+.landpage-services-bg {
+    background: url('/photo/images/service-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+}
 /* landpage content services */
 .landpage-content-services {
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 3rem;
     padding-right: 3%;
+    margin-right: 10%;
 }
 .services-list {
     list-style: none;
@@ -132,6 +244,7 @@
     margin: 0.6rem 0;
     font-size: 0.95rem;
     color: #e4e4e4;
+    text-shadow: 0 0 0.1rem #000;
     align-items: center;
     opacity: 70%;
     cursor: pointer;
@@ -148,12 +261,15 @@
     border: 3px solid #ffc2c2;
     border-radius: 0.3rem;
     box-shadow: 0.4rem 0.2rem 0.5rem #3f2d2d;
+    opacity: 90%;
 }
 .service-item-active {
+    background: url('/photo/backgrounds/services-bg.png') !important;
     border-right: 2px solid #ffb7b7;
     border-bottom: 3px solid #ffb7b7;
     border-top: 1px solid #ffb7b7;
-    color: #fff !important;
+    color: #0dfcac !important;
+    text-shadow: 0 0 0.2rem #000;
     height: 6rem;
     box-sizing: border-box;
     opacity: 100% !important;
@@ -170,6 +286,18 @@
 }
 
 
+.invoker-quas-anim {
+    animation: invoker-quas-anim 1.5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite;
+    transform-origin: -6rem 7rem;
+}
+.invoker-wex-anim {
+    animation: invoker-quas-anim 1.5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite;
+    transform-origin: 7rem 8rem;
+}
+.invoker-exort-anim {
+    animation: invoker-quas-anim 1.5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite;
+    transform-origin: 2rem -6rem;
+}
 
 /* animations */
 @keyframes tournaments-btn-anim {
@@ -226,5 +354,30 @@
     }
     100% {
         transform: rotateY(0);
+    }
+}
+
+@keyframes invoker-quas-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes invoker-wex-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes invoker-exort-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }

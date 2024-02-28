@@ -38,8 +38,18 @@ const LoginCode = ({ setLoginway }) => {
         post_code_login(phone, code, navigate, setUser);
     }
 
+    const changeLoginWay = () => {
+        let code_form = document.getElementById('code_form');
+
+        code_form.classList.add('code-fade-anim')
+
+        setTimeout(() => {
+            setLoginway(0)
+        }, 500);
+    }
+
     return (
-        <form className='login-area' onSubmit={(e) => login_code(e)}>
+        <form className='login-area code-init-anim' onSubmit={(e) => login_code(e)} id='code_form'>
             <h2>Login</h2>
             <input type="text" id='phone_input' placeholder='شماره موبایل'
                 onChange={login_check_style} />
@@ -60,7 +70,7 @@ const LoginCode = ({ setLoginway }) => {
             <button className='login-btn' id='login_btn' disabled>ورود</button>
             <div>
                 <span className='login-signup' onClick={() => navigate('/signplayer')}>ثبت نام</span>
-                <span className='login-change-way' onClick={() => setLoginway(0)}>ورود با نام کاربری</span>
+                <span className='login-change-way' onClick={() => changeLoginWay()}>ورود با نام کاربری</span>
             </div>
         </form>
     );

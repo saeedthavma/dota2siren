@@ -26,6 +26,7 @@ const Header = () => {
     const logout_user = () => {
         localStorage.removeItem("token")
         setUser(0)
+        setLogout(0)
         navigate("/")
     }
 
@@ -116,7 +117,6 @@ const Header = () => {
                 <>
                     <div className='logout-popup-bg' onClick={() => setLogout(0)}></div>
                     <div className="logout-popup">
-                        <img src='/photo/images/landpage-pudge.jpg' />
                         <span>آیا از خروج اطمینان دارید ؟</span>
                         <div>
                             <button className='logout-btn' onClick={logout_user}>
