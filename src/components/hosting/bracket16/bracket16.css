@@ -1,0 +1,291 @@
+
+.bracket16 h2 {
+    margin-top: 8.5rem;
+    text-align: center;
+    color: #fff;
+}
+.bracket16-area {
+    width: 90%;
+    height: auto;
+    margin: 2rem 5%;
+    direction: ltr;
+    color: #fff;
+    border: 2px solid #ffffff3b;
+    border-radius: 1rem;
+}
+
+.bracket16-placement {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    grid-gap: 1rem;
+    padding: 3rem 0;
+    border-bottom: 2px solid #ffffff3b;
+    position: relative;
+}
+.bracket16-placement h3 {
+    position: absolute;
+    top: 0.5rem;
+}
+
+.bracket16-match {
+    width: 15rem;
+    height: 4rem;
+    background: #ffffff31;
+    border: 1px solid #ffffff6e;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    font-size: 0.6rem;
+}
+.bracket16-match-team1 {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    place-items: center;
+    direction: ltr;
+    border-bottom: 1px solid #ffffff49;
+}
+.bracket16-match-team2 {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    place-items: center;
+    direction: ltr;
+    overflow-x: auto;
+    overflow: hidden;
+}
+.bracket16-team-name {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column-gap: 0.1rem;
+    align-items: center;
+    direction: ltr;
+}
+.bracket16-team-name div {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.bracket16-team-name img {
+    width: auto;
+    max-width: 3rem;
+    height: 1.5rem;
+    padding: 0.1rem;
+    
+}
+.bracket16-team-name span {
+    font-size: 0.9rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    direction: ltr;
+    text-shadow: 0 0 0.2rem #000;
+}
+.bracket16-team-score {
+    font-size: 1rem;
+    padding: 0.3rem 0.9rem;
+    border-left: 1px solid #ffffff49;
+    text-shadow: 0 0 0.2rem #000;
+}
+
+
+/* bracket */
+.bracket16-bracket {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 5rem;
+    grid-column-gap: 1rem;
+    padding: 3rem 1rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background: #0000009f;
+    direction: ltr;
+}
+
+.bracket16-upper-round1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    place-items: center;
+    grid-row-gap: 1rem;
+    position: relative;
+}
+.bracket16-upper-round1 h4 {
+    position: absolute;
+    top: -2rem;
+    color: #e4e4e4;
+    border: 1px solid #535353;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    background: #000000cb;
+}
+
+.bracket16-upper-round2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    grid-row-gap: 1rem;
+    position: relative;
+}
+.bracket16-upper-round2 h4 {
+    position: absolute;
+    top: -2rem;
+    color: #e4e4e4;
+    border: 1px solid #535353;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    background: #000000cb;
+}
+
+.bracket16-upper-round3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    grid-row-gap: 1rem;
+    position: relative;
+}
+.bracket16-upper-round3 h4 {
+    position: absolute;
+    top: -2rem;
+    color: #e4e4e4;
+    border: 1px solid #535353;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    background: #000000cb;
+}
+
+.bracket16-grand-final {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    grid-row-gap: 1rem;
+    position: relative;
+    margin-bottom: -25rem;
+}
+.bracket16-grand-final h4 {
+    position: absolute;
+    top: -2rem;
+    color: #e4e4e4;
+    border: 1px solid #535353;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    background: #000000cb;
+}
+.bracket16-trophy-icon {
+    position: absolute;
+    top: 2rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+.bracket16-lower-round1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    place-items: center;
+    grid-row-gap: 1rem;
+    position: relative;
+}
+.bracket16-lower-round1 h4 {
+    position: absolute;
+    top: -2rem;
+    color: #e4e4e4;
+    border: 1px solid #535353;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    background: #000000cb;
+}
+
+.bracket16-lower-round2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    grid-row-gap: 1rem;
+    position: relative;
+}
+.bracket16-lower-round2 h4 {
+    position: absolute;
+    top: -2rem;
+    color: #e4e4e4;
+    border: 1px solid #535353;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    background: #000000cb;
+}
+
+.bracket16-lower-round3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    grid-row-gap: 1rem;
+    position: relative;
+}
+.bracket16-lower-round3 h4 {
+    position: absolute;
+    top: -2rem;
+    color: #e4e4e4;
+    border: 1px solid #535353;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    background: #000000cb;
+}
+
+.bracket16-lower-semifinal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    grid-row-gap: 1rem;
+    position: relative;
+}
+.bracket16-lower-semifinal h4 {
+    position: absolute;
+    top: -2rem;
+    color: #e4e4e4;
+    border: 1px solid #535353;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    background: #000000cb;
+}
+
+.bracket16-lower-final {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    grid-row-gap: 1rem;
+    position: relative;
+}
+.bracket16-lower-final h4 {
+    position: absolute;
+    top: -2rem;
+    color: #e4e4e4;
+    border: 1px solid #535353;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    background: #000000cb;
+}

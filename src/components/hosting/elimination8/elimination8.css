@@ -70,7 +70,7 @@
     width: 15rem;
     height: 5rem;
     background: #ffffff31;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff6e;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -80,7 +80,7 @@
     grid-template-columns: 80% 20%;
     place-items: center;
     direction: ltr;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #ffffff49;
 }
 .elimination8-match-team2 {
     display: grid;
@@ -119,6 +119,6 @@
 }
 .elimination8-team-score {
     padding: 0.55rem 0.9rem;
-    border-left: 1px solid #fff;
+    border-left: 1px solid #ffffff49;
     text-shadow: 0 0 0.2rem #000;
 }

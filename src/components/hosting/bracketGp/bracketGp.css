@@ -1,0 +1,425 @@
+
+.bracketgp h2 {
+    margin-top: 8.5rem;
+    text-align: center;
+    color: #fff;
+}
+.bracketgp-area {
+    width: 90%;
+    height: auto;
+    margin: 2rem 5%;
+    direction: ltr;
+    color: #fff;
+    border: 2px solid #ffffff31;
+    border-radius: 1rem;
+}
+
+/* group stage */
+.bracketgp-group-stage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 3rem;
+    justify-items: center;
+    direction: ltr;
+    padding: 4rem 0;
+    border-bottom: 2px solid #ffffff31;
+    position: relative;
+}
+.bracketgp-group-stage h3 {
+    position: absolute;
+    top: 0.2rem;
+    background: #7e0808;
+    text-shadow: 0 0 0.2rem #000;
+    padding: 0.2rem 0.7rem;
+    border: 1px solid #000;
+    border-radius: 0.3rem;
+}
+.bracketgp-group {
+    width: 80%;
+    border: 1px solid #a0a0a0;
+    border-radius: 0.3rem;
+    position: relative;
+    display: grid;
+    justify-items: center;
+}
+.bracketgp-group h4 {
+    position: absolute;
+    top: -2rem;
+    font-weight: lighter;
+    background: #0000009f;
+    padding: 0.2rem 2rem;
+    border: 1px solid #000000b4;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.bracketgp-group-teams {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    direction: ltr;
+    background: #ffffff21;
+}
+.bracketgp-group-teams li {
+    display: grid;
+    grid-template-columns: max-content 15% 45% 15% 15%;
+    grid-column-gap: 0.5rem;
+    align-items: center;
+    direction: ltr;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    border-bottom: 1px solid #666666;
+}
+.bracketgp-group-teams li:last-child {
+    border: none !important;
+}
+.bracketgp-group-teams li img {
+    width: auto;
+    max-width: 3rem;
+    height: 2rem;
+    place-self: center !important;
+}
+.bracketgp-group-teams li span {
+    letter-spacing: 0.2rem;
+}
+
+/* match */
+.bracketgp-match {
+    width: 14rem;
+    height: 4rem;
+    background: #ffffff31;
+    border: 1px solid #ffffff6e;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    font-size: 0.6rem;
+}
+.bracketgp-match-team1 {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    place-items: center;
+    direction: ltr;
+    border-bottom: 1px solid #ffffff49;
+}
+.bracketgp-match-team2 {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    place-items: center;
+    direction: ltr;
+    overflow-x: auto;
+    overflow: hidden;
+}
+.bracketgp-team-name {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column-gap: 0.1rem;
+    align-items: center;
+    direction: ltr;
+}
+.bracketgp-team-name div {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.bracketgp-team-name img {
+    width: auto;
+    max-width: 3rem;
+    height: 1.5rem;
+    padding: 0.1rem;
+    
+}
+.bracketgp-team-name span {
+    font-size: 0.9rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    direction: ltr;
+    text-shadow: 0 0 0.2rem #000;
+}
+.bracketgp-team-score {
+    font-size: 1rem;
+    padding: 0.3rem 0.9rem;
+    border-left: 1px solid #ffffff49;
+    text-shadow: 0 0 0.2rem #000;
+}
+
+/* group matches */
+.bracketgp-group-matches {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 4rem;
+    place-items: center;
+    padding: 4rem 0;
+    border-bottom: 2px solid #ffffff31;
+    position: relative;
+}
+.bracketgp-group-matches h3 {
+    position: absolute;
+    align-self: start !important;
+    top: 0.2rem;
+    background: #7e0808;
+    text-shadow: 0 0 0.2rem #000;
+    padding: 0.2rem 0.7rem;
+    border: 1px solid #000;
+    border-radius: 0.3rem;
+}
+
+.bracketgp-group-matches-area {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+    place-items: center;
+    border-top: 1px solid #ffffff80;
+    border-bottom: 1px solid #ffffff80;
+    box-shadow: 0 0 0.2rem #ffffff80;
+    direction: ltr;
+    position: relative;
+}
+.bracketgp-group-matches-area h4 {
+    position: absolute;
+    justify-self: start !important;
+    top: -1.9rem;
+    left: 2rem;
+    font-weight: lighter;
+    background: #0000009f;
+    padding: 0.2rem 2rem;
+    border: 1px solid #ffffff5e;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+
+/* bracket */
+.bracketgp-bracket {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 5rem;
+    grid-column-gap: 1rem;
+    padding: 5rem 1rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background: #0000009f;
+    direction: ltr;
+    position: relative;
+}
+.bracketgp-bracket h3 {
+    position: absolute;
+    justify-self: center !important;
+    top: 0.3rem;
+    letter-spacing: 0.1rem;
+    text-shadow: 0 0 0.2rem #000;
+    background: #7e0808;
+    padding: 0.2rem 0.7rem;
+    border: 1px solid #000;
+    border-radius: 0.3rem;
+}
+
+.bracketgp-upper-round1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    place-items: center;
+    grid-row-gap: 1rem;
+    position: relative;
+}
+.bracketgp-upper-round1 h4 {
+    position: absolute;
+    top: -2rem;
+    color: #e4e4e4;
+    border: 1px solid #535353;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    background: #000000cb;
+}
+
+.bracketgp-upper-round2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    grid-row-gap: 1rem;
+    position: relative;
+}
+.bracketgp-upper-round2 h4 {
+    position: absolute;
+    top: -2rem;
+    color: #e4e4e4;
+    border: 1px solid #535353;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    background: #000000cb;
+}
+
+.bracketgp-upper-round3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    grid-row-gap: 1rem;
+    position: relative;
+}
+.bracketgp-upper-round3 h4 {
+    position: absolute;
+    top: -2rem;
+    color: #e4e4e4;
+    border: 1px solid #535353;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    background: #000000cb;
+}
+
+.bracketgp-grand-final {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    grid-row-gap: 1rem;
+    position: relative;
+    margin-bottom: -25rem;
+}
+.bracketgp-grand-final h4 {
+    position: absolute;
+    top: -2rem;
+    color: #e4e4e4;
+    border: 1px solid #535353;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    background: #000000cb;
+}
+.bracketgp-trophy-icon {
+    position: absolute;
+    top: 2rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+.bracketgp-lower-round1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    place-items: center;
+    grid-row-gap: 1rem;
+    position: relative;
+}
+.bracketgp-lower-round1 h4 {
+    position: absolute;
+    top: -2rem;
+    color: #e4e4e4;
+    border: 1px solid #535353;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    background: #000000cb;
+}
+
+.bracketgp-lower-round2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    place-items: center;
+    grid-row-gap: 1rem;
+    position: relative;
+}
+.bracketgp-lower-round2 h4 {
+    position: absolute;
+    top: -2rem;
+    color: #e4e4e4;
+    border: 1px solid #535353;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    background: #000000cb;
+}
+
+.bracketgp-lower-round3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    grid-row-gap: 1rem;
+    position: relative;
+}
+.bracketgp-lower-round3 h4 {
+    position: absolute;
+    top: -2rem;
+    color: #e4e4e4;
+    border: 1px solid #535353;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    background: #000000cb;
+}
+
+.bracketgp-lower-round4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    grid-row-gap: 1rem;
+    position: relative;
+}
+.bracketgp-lower-round4 h4 {
+    position: absolute;
+    top: -2rem;
+    color: #e4e4e4;
+    border: 1px solid #535353;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    background: #000000cb;
+}
+
+.bracketgp-lower-semifinal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    grid-row-gap: 1rem;
+    position: relative;
+}
+.bracketgp-lower-semifinal h4 {
+    position: absolute;
+    top: -2rem;
+    color: #e4e4e4;
+    border: 1px solid #535353;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    background: #000000cb;
+}
+
+.bracketgp-lower-final {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    grid-row-gap: 1rem;
+    position: relative;
+}
+.bracketgp-lower-final h4 {
+    position: absolute;
+    top: -2rem;
+    color: #e4e4e4;
+    border: 1px solid #535353;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    background: #000000cb;
+}
